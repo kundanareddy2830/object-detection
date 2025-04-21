@@ -209,8 +209,26 @@ def detect_file(uploaded_file):
         status.success("✅ Detection stopped.")
 
 # Main control
+# if detection_mode == "Webcam":
+#     if st.button("Start Detection"):
+#         detect_webcam()
+
 if detection_mode == "Webcam":
-    if st.button("Start Detection"):
+    st.info("Note: Webcam access only works when this app is run on your *local machine*.")
+    st.warning("Due to browser and server restrictions, webcam won’t work in deployed versions (like Streamlit Cloud).")
+
+    st.markdown("""
+        - *To use webcam detection*, please run this app locally:
+        bash
+        git clone https://github.com/yourusername/your-repo.git
+        cd your-repo
+        pip install -r requirements.txt
+        streamlit run app.py
+        
+        - Or try uploading an image or video below.
+    """)
+
+    if st.button("Start Detection (Local Only)"):
         detect_webcam()
 
 elif detection_mode == "Upload Image/Video":
