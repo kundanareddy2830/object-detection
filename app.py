@@ -156,7 +156,7 @@ def process_frame(frame):
 
 # Webcam detection
 def detect_webcam():
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     if not cap.isOpened():
         st.error("Unable to access webcam.")
         return
