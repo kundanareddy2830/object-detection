@@ -28,6 +28,25 @@ Pillow (PIL)
 
 NumPy
 
+## 🚀 Try It Online
+
+*[Click here to open the app]((https://object-detection-28.streamlit.app/))*
+
+> *Note:* Due to browser and server restrictions, *webcam access may not work* on cloud-hosted environments like Streamlit or mobile browsers.  
+> Instead, you can upload images or videos to test the model.
+
+---
+
+## 🖥 Run Locally for Webcam Access
+
+To enable webcam access (which doesn't work reliably in hosted environments), follow these steps:
+
+
+### 1. Clone this repository
+### 2.Create a virtual environment
+### 3.Install Dependencies
+### 4. Run the Streamlit App
+
 🖼️ Usage
 
 Select detection mode: Webcam or Upload Image/Video
