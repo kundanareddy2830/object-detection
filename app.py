@@ -219,11 +219,7 @@ if detection_mode == "Webcam":
 
     st.markdown("""
         - *To use webcam detection*, please run this app locally:
-        bash
-        git clone https://github.com/yourusername/your-repo.git
-        cd your-repo
-        pip install -r requirements.txt
-        streamlit run app.py
+       
         
         - Or try uploading an image or video below.
     """)
